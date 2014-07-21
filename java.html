@@ -100,5 +100,21 @@
 	var sum =(addTwoNumbers()); //function call
 	console.log(sum);
 	
+	var addNumbers = addTwoNumbers;
+	console.log(addNumbers(5,6));
+	
+	
+	//closure
+	function add(){
+		var counter = 0; 
+					
+		function plus(){ //nested function
+			counter+=1;
+		}
+		plus();
+		return counter;
+	}
+	console.log(add());
+	
 </script>
 	Hello world
