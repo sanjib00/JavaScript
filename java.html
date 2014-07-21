@@ -69,12 +69,27 @@
 	console.log(Number('afds'));
 	console.log(Number('afds123'));
 	console.log(Number('123afds'));
-	console.log(Number('123'));
+	console.log(Number('123.11'));
 	
 	console.log(parseInt('afds'));
 	console.log(parseInt('afds123'));
 	console.log(parseInt('123afds'));
-	console.log(parseInt('123'));
+	console.log(parseInt('123.72'));
+	//var aVar = 'string'; //true
+	//var aVar = 123;//true
+	//var aVar = 0; //false
+	//var aVar; //undefined
+	var aVar = null; //false
+	//var aVar = '';//false
+	//var aVar = '0';//true
+	//var aVar = ' ';//true
+	
+	if(aVar){
+		console.log('true');
+	}
+	else{
+		console.log('false');
+	}
 	
 </script>
 	Hello world
