@@ -26,12 +26,33 @@
 		satisfy:function(){
 			
 			console.log('Satisfying Hunger');
-			console.log(fruits.name);
-			console.log(fruits.satisfy);
+			
 			
 		}
 		
 	};
 	console.log(typeof fruits);
+	console.log(fruits.name);
+			
+		
+			console.log(fruits['name']);
+			console.log(fruits.satisfy);
+			
+			var student = {
+			
+				name:'sanjib',
+				id:'FTFL007',
+				email:'ss@nnnnn.com',
+				tools:{
+						laptop:false,
+						desktop:{
+							monitor:'17inch',
+							CPU:'CorI5'
+						}
+					}
+				}
+				
+				console.log(student.tools.desktop.monitor);
+				console.log(student['tools']['desktop']['monitor']);
 
 </script>
