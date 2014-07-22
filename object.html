@@ -40,6 +40,7 @@
 			
 			var student = {
 			
+			
 				name:'sanjib',
 				id:'FTFL007',
 				email:'ss@nnnnn.com',
@@ -54,5 +55,19 @@
 				
 				console.log(student.tools.desktop.monitor);
 				console.log(student['tools']['desktop']['monitor']);
+				
+				//defining object using a constructor function
+				
+				function Cars(make,model,year){
+				
+					this.make = make;
+					this.model = model;
+					this.year = year;
+				}
+				
+				var mycar = new Cars("Eagle","talon TSI", 1955);
+				
+				console.log(typeof mycar);
+				console.log(mycar.make);
 
 </script>
