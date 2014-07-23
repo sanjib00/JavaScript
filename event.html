@@ -37,7 +37,7 @@ img{
 
 <form >
 <input id="fullname" name="fullname"/>
-<button name="buttonclick" onclick="validateName()">Click Me</button>
+<button id ="buttonclick" name="buttonclick" onclick="return validateName()">Click Me</button>
 </form>
 <script>
 	function validateName(){
@@ -55,7 +55,8 @@ img{
 
 
 ;(function(){
-
+	var buttonclick=document.getElementById('buttonclick');
+	buttonclick.addEventListener('click',validateName,false);
 
 })();
 </script>
