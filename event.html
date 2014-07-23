@@ -1,6 +1,20 @@
 <html>
 <head>
 <title>Understanding event & Event handler registration</title>
+<style>
+img{
+
+	display:none;
+	
+	}
+	
+	img[alt='game']{
+		display:block;
+	
+	}
+
+</style>
+
 </head>
 <body>
 <div role="article">
@@ -21,8 +35,9 @@
 </ul>
 </nav>
 
-<form id="fullname" name="fullname"/>
-<button name="buttonclick" onclick="alert('Hi, I am clicked')">Click Me</button>
+<form >
+<input id="fullname" name="fullname"/>
+<button name="buttonclick" onclick="alert('Hi, I am clicked');return false">Click Me</button>
 </form>
 <script>
 ;(function(){
