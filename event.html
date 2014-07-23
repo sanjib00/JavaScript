@@ -2,7 +2,7 @@
 <head>
 <title>Understanding event & Event handler registration</title>
 <style>
-img{
+/* img{
 
 	display:none;
 	
@@ -12,7 +12,7 @@ img{
 		display:block;
 	
 	}
-
+*/
 </style>
 
 </head>
@@ -24,14 +24,17 @@ img{
 </div>
 <div>
 <img alt="game" src="image/photo-1.jpg" width="200" height="100" />
+<!--
 <img alt="abstruct" src="image/photo-2.jpg" width="200" height="100" />
 <img alt="people" src="image/photo-3.jpg" width="200" height="100" />
+
+-->
 </div>
 <nav role="gallery navigator">
 <ul>
-<li><a href="#"  onclick="alert('link is clicked')">Game</a></li>
-<li><a href="#">Abstruct</a> </li>
-<li><a href="#">People</a> </li>	
+<li><a href="http://www.yahoo.com"  onclick="loadImage('photo-1')">Game</a></li>
+<li><a href="http://www.yahoo.com" onclick="loadImage('photo-2')">Abstruct</a> </li>
+<li><a href="http://www.yahoo.com" onclick="loadImage('photo-3')">People</a> </li>	
 </ul>
 </nav>
 
@@ -40,6 +43,14 @@ img{
 <button id ="buttonclick" name="buttonclick" onclick="return validateName()">Click Me</button>
 </form>
 <script>
+	
+	function loadImage(){
+	
+		var iph = document.getElementById('imgPlaceHolder');
+		iph.setAttribute('src','image/'+imgName+'.jpg');
+		return false;
+	}
+
 	function validateName(ruhi){
 		var fullname = document.getElementById('fullname').value;
 		if(fullname ==""){
