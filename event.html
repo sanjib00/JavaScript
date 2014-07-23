@@ -37,9 +37,23 @@ img{
 
 <form >
 <input id="fullname" name="fullname"/>
-<button name="buttonclick" onclick="alert('Hi, I am clicked');return false">Click Me</button>
+<button name="buttonclick" onclick="validateName()">Click Me</button>
 </form>
 <script>
+	function validateName(){
+		var fullname = document.getElementByID('fullname').value;
+		if(fullname ==""){
+		
+			alert("Please enter yr name");
+			return false;
+		}else{
+			alert("thank"+fullname+" you");
+			return true;
+		}
+		//return false;
+	}
+
+
 ;(function(){
 
 
