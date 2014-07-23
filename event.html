@@ -40,11 +40,12 @@ img{
 <button id ="buttonclick" name="buttonclick" onclick="return validateName()">Click Me</button>
 </form>
 <script>
-	function validateName(){
+	function validateName(ruhi){
 		var fullname = document.getElementById('fullname').value;
 		if(fullname ==""){
 		
 			alert("Please enter yr name");
+			ruhi.preventDefault();
 			return false;
 		}else{
 			alert("thank"+fullname+" you");
